@@ -50,6 +50,8 @@ To analyze pizza sales data and extract key insights such as revenue, order patt
 ```sql
 SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
 ```
+<img width="140" height="41" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/c9bad624-57ac-4de5-a064-4b96f3f42172" />
+
 
 
 
