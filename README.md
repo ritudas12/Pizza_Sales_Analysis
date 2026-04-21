@@ -107,16 +107,16 @@ ORDER BY Total_Quantity_Sold DESC
 ```
 
 # F.Top 5 Best Sellers by Total Pizzas Sold
-```
-sql SELECT Top 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
+```sql
+ SELECT Top 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Pizza_Sold DESC
 ```
 
 # G.Bottom 5 Best Sellers by Total Pizzas Sold
-```
-sql SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
+```sql
+ SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Pizza_Sold ASC
