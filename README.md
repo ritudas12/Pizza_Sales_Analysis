@@ -3,6 +3,7 @@
 
 # Project Overview
 This project focuses on analyzing pizza sales data using SQL to generate meaningful business insights. It helps understand sales performance, customer ordering behavior, and product popularity.
+
 ![image](https://github.com/ritudas12/Pizza_Sales_Analysis/blob/1576245bf095475cf945763fb8284f22eea522e5/Dashboard_img.jpeg)
 # Objective
 To analyze pizza sales data and extract key insights such as revenue, order patterns, and best-selling pizzas.
