@@ -7,11 +7,11 @@ This project focuses on analyzing pizza sales data using SQL to generate meaning
 # Objective
 To analyze pizza sales data and extract key insights such as revenue, order patterns, and best-selling pizzas.
 
-#Tools & Technologies
+# Tools & Technologies
 * SQL (MySQL / SQL Server)
 * Excel (for dataset)
 
-#Key Analysis Performed
+# Key Analysis Performed
 
 1. Revenue Analysis
 * Total Revenue generated
