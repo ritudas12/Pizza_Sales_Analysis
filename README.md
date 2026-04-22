@@ -155,12 +155,6 @@ ORDER BY Total_Pizza_Sold ASC;
 <img width="312" height="155" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/cc018b4d-416b-4f5c-ac82-671175ffbef6" />
 
 
-
-# How to Use
-1. Import the dataset into your SQL database
-2. Run the SQL queries provided
-3. Analyze the results and visualize if needed
-
 # Conclusion
 This project demonstrates how SQL can be used to analyze real-world sales data and generate actionable business insights.
 
