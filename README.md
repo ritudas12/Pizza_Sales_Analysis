@@ -1,5 +1,5 @@
 
-# 🍕 Pizza Sales Data Analysis using SQL
+#  Pizza Sales Data Analysis using SQL
 
 # Project Overview
 This project focuses on analyzing pizza sales data using SQL to generate meaningful business insights. It helps understand sales performance, customer ordering behavior, and product popularity.
@@ -59,22 +59,30 @@ SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
 ```sql
 SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales;
 ```
+<img width="181" height="91" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/fd93b894-70fe-405f-bd9d-e1942adbbedc" />
+
 
 **3. Total Pizzas Sold:**
 ```sql 
 SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales;
 ```
+<img width="173" height="84" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/388f6332-0d48-47ce-a4bb-ec709987c8e4" />
+
 
 **4. Total Orders:**
 ```sql
 SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales;
 ```
+<img width="164" height="79" alt="Screenshot (14)" src="https://github.com/user-attachments/assets/4ef380c9-a100-4d5f-8f0b-80fc00cd7112" />
+
 
 **5. Average Pizzas Per Order:**
 ```sql
  SELECT CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2)) AS Avg_Pizzas_per_order
 FROM pizza_sales;
 ```
+<img width="181" height="108" alt="Screenshot (16)" src="https://github.com/user-attachments/assets/9e7bf250-1d83-4940-b9d7-35556920839a" />
+
 
 **A. Daily Trend for Total Orders:**
 ```sql
@@ -83,6 +91,8 @@ FROM pizza_sales
 GROUP BY DATENAME(DW, order_date);
 ```
 
+<img width="217" height="352" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/33087dcc-3c3a-42ce-93a4-a37e1fdef0d5" />
+
 **B. Hourly Trend for Orders:**
 ```sql
 SELECT DATEPART(HOUR, order_time) as order_hours, COUNT(DISTINCT order_id) as total_orders
@@ -90,6 +100,8 @@ from pizza_sales
 group by DATEPART(HOUR, order_time)
 order by DATEPART(HOUR, order_time);
 ```
+<img width="217" height="352" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/cf271917-e4f6-4b00-a1b1-b6b840fb8a37" />
+
 
 **C. % of Sales by Pizza Category:**
 ```sql
@@ -98,6 +110,7 @@ CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECI
 FROM pizza_sales
 GROUP BY pizza_category;
 ```
+<img width="263" height="110" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/0b739f04-a438-4fec-ac6e-74e4432f0616" />
 
 
 **D. % of Sales by Pizza Size:**
@@ -108,6 +121,7 @@ FROM pizza_sales
 GROUP BY pizza_size
 ORDER BY pizza_size;
 ```
+<img width="249" height="155" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/1ac2288f-d4e3-47de-a2e3-53721e89d2db" />
 
 **E. Total Pizzas Sold by Pizza Category:**
 ```sql
@@ -117,6 +131,8 @@ WHERE MONTH(order_date) = 2
 GROUP BY pizza_category
 ORDER BY Total_Quantity_Sold DESC;
 ```
+<img width="244" height="138" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/2810197e-1893-42b5-b77d-50b3eb3e4de2" />
+
 
 **F.Top 5 Best Sellers by Total Pizzas Sold:**
 ```sql
@@ -125,6 +141,8 @@ FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Pizza_Sold DESC;
 ```
+<img width="315" height="135" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/ac3602d0-4cf9-4773-a050-e3dc6c07349c" />
+
 
 **G.Bottom 5 Best Sellers by Total Pizzas Sold:**
 ```sql
@@ -133,6 +151,9 @@ FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Pizza_Sold ASC;
 ```
+<img width="312" height="155" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/cc018b4d-416b-4f5c-ac82-671175ffbef6" />
+
+
 
 # How to Use
 1. Import the dataset into your SQL database
