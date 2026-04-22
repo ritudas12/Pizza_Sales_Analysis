@@ -91,7 +91,8 @@ FROM pizza_sales
 GROUP BY DATENAME(DW, order_date);
 ```
 
-<img width="217" height="352" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/33087dcc-3c3a-42ce-93a4-a37e1fdef0d5" />
+<img width="199" height="202" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/4431a261-211c-4939-8e71-4bfe85799e09" />
+
 
 **B. Hourly Trend for Orders:**
 ```sql
